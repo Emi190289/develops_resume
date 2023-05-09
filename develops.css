@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --bg-color: #6b7fba;
+    --white: #fff;
+    --resume-left-bg: #9ab3eb;
+    --resume-right-bg: #8096d0;
+    --text-color: #525252;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background:var(--bg-color);
+    font-size:12px;
+    color:var(--text-color);
+    line-height: 20px;
+    padding: 0 20px;
+}
+
+h2{
+    font-family: 'Calligraffitti', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume{
+    display:flex;
+    width:800px;
+    max-width: 100%;
+    height:auto;
+    background: var(--white);
+    margin: 50px auto;
+}
+
+.res-left{
+    width:270px;
+}
+
+.res-right{
+    width: calc(800px - 270px);
+}
+
+.profile-image{
+    width:100%;
+    height:260px;
+    padding:35px;
+    background: var(--resume-left-bg);
+}
+
+.profile-image img{
+    width:100%;
+    margin-bottom: 35px;
+    border-radius: 100%;
+}
+
+.resume .res-left .right-top .res-name{
+    background: var(--resume-right-bg);
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+    padding-left: 55px;
+    font-family: 'Calligraffitti';
+}
+
+.resume .res-left .right-top .res-desig {
+    background-color: var(--resume-right-bg);
+    font-family: 'Calligraffitti';
+    color: var(--white);
+    padding-bottom:10px;
+    padding-left: 65px;
+}
+
+.resume .res-left .right-top .res-info ul li{
+    /* padding-top: 10px; */
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 60p x; */
+}
+
+.resume .res-left .right-top .res-info{
+    padding-top:10px;
+    background: var(--white);
+    /* display: flex; */
+    padding-left:35px;
+}
+
+.resume .res-left .right-top{
+    display: none;
+}
+
+.profile-info-left{
+    padding:15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.profile-info-left h2{
+    margin-top: 35px;
+}
+
+.techskills{
+        text-align: left;
+        padding-left: 15px;
+}
+
+.Links ul li p:first-child{
+    display:flex;
+   align-items: center;
+   justify-content: center;
+    margin-right: 15px;
+    background-color: var(--resume-left-bg);
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    color:var(--white);
+    font-size: 14px;
+    
+    margin-left: 25px;
+}
+
+.Links ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.techskills ul li{
+    display:flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.techskills ul li p:first-child{
+    margin-right: 15px;
+}
+
+.Qualification h5{
+    /* margin-left: 0px; */
+    font-size:15px;
+    font-family: 'Calligraffitti';
+}
+
+.percentage{
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+/* .resume .res-left .res */
+.res-right{
+    background: var(--resume-right-bg);
+}
+
+.res-right .res-name{
+    font-family: 'Calligraffitti';
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.res-right .res-desig{
+    color:var(--white);
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Calligraffitti';
+    padding-top: 10px;
+    /* line-height: 24px; */
+}
+
+.resume .res-right .res-info{
+    margin-top:40px;
+    background: var(--white);
+    display: flex;
+    padding:35px;
+    justify-content: space-around;
+}
+
+
+h4{
+    text-align: left;
+}
+
+.exp h3{
+    font-family: 'Calligraffitti';
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.exp h4{
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: 'Calligraffitti';
+}
+.exp ul li{
+    color:var(--white);
+    padding:15px;
+    padding-bottom: 0;
+}
+
+.first-exp ul li{
+    display:flex;
+    align-items: center;
+}
+
+.first-exp ul li p:first-child{
+    margin-right: 10px;
+}
+
+.second-exp ul li{
+    display: flex;
+    align-items: center;
+}
+
+.second-exp ul li p:first-child{
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    .resume .res-right .right-top{
+        display:none
+    }
+
+    .resume .res-left .right-top{
+        display:block;
+    }
+    
+    .resume{
+        width:95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .resume .res-left, .resume .res-right{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:424px){
+    .profile-image{
+        height: auto;
+    }   
+}
